@@ -15,6 +15,7 @@ spec:
       containers:
       - name: hello-azure
         image: yomiping/hello-azure-service
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
