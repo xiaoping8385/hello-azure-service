@@ -37,9 +37,8 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'dockerhub-credentials', variable: 'DOCKERHUB_PASSWORD')]) {
-                        sh "echo $DOCKERHUB_PASSWORD | docker login -u <your-dockerhub-username> --password-stdin"
-                        sh "docker tag ${DOCKER_IMAGE} <your-dockerhub-username>/${DOCKER_IMAGE}:latest"
-                        sh "docker push <your-dockerhub-username>/${DOCKER_IMAGE}:latest"
+                        sh "echo $DOCKERHUB_PASSWORD | docker login -u yomiping --password-stdin"
+                        sh "docker push ${DOCKER_IMAGE}:latest"
                     }
                 }
             }

@@ -20,7 +20,7 @@ public class Application {
     @GetMapping("/")
     @ResponseBody
     public String index() {
-        return "Hello azure 01";
+        return "Hello azure 02";
     }
 
 }
