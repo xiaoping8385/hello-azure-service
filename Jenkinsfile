@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define any environment variables if needed
-        DOCKER_IMAGE = 'yomiping/hello-azure-service:v2'
+        DOCKER_IMAGE = 'yomiping/hello-azure-service:v1'
     }
 
     stages {
